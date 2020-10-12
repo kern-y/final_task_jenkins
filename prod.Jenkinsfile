@@ -13,7 +13,7 @@ pipeline {
 	  stages {
         stage("pulling a project from GitHub") {
             steps {
-                git poll: true, url: 'https://github.com/kern-y/final_task_intermine'
+                git url: 'https://github.com/kern-y/final_task_intermine'
 				   }
         }
         stage("building an artifact") {
